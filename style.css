@@ -8,6 +8,10 @@
   list-style: none;
   font-family: "lora", "serif";
 }
+h1 h3 p{
+    text-shadow: red -2px 0;
+    text-shadow: green 2px 0;
+}
 /* hello sec */
 
 #hello{
@@ -39,7 +43,7 @@
     color: white;
     position: relative;
     left: 60px;
-    top: 200px;
+    top: 210px;
     font-size: 15px;
 }
 .cme a{
@@ -51,7 +55,7 @@
     text-align: center;
     position: relative;
     left: 60px;
-    top: 230px;
+    top: 240px;
 }
 .cme a:hover{
     background-color: black;
