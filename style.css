@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200;1,600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;700&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,900;1,300;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "lora", "serif";
+}
+/* hello sec */
+
+#hello{
+    background-image: url(images/Hello\ .jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+#greeting{
+    display: flex;
+    flex-direction: column;
+}
+#greeting h1{
+    width: fit-content;
+    color: white;
+    position: relative;
+    left: 60px;
+    top: 200px;
+    font-size: 30px;
+}
+#greeting h3{
+    width: fit-content;
+    display: inline;
+    color: white;
+    position: relative;
+    left: 60px;
+    top: 200px;
+    font-size: 15px;
+}
+.cme a{
+    background-color: crimson;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 60px;
+    top: 230px;
+}
+.cme a:hover{
+    background-color: black;
+    transition: .6s ease;
+}
+.cme a:active{
+    background-color: rgb(246, 19, 19);
+}
+
+/* close hello sec */
+/* about sec */
+.main2{
+    width: 100%;
+    height: 60vh;
+}
+#about{
+    background-color: rgb(68, 68, 68);
+}
+.about{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    width: 600px;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.info h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.info p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.resume a{
+    background-color: crimson;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+}
+.resume a:hover{
+    background-color: black;
+    transition: .5s ease;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+/* close about sec */
+/* skill sec */
+
+.main3{
+    width: 100%;
+    height: 70vh;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    border: 2px solid red;
+    width: 330px;
+    height: 260px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* close skill sec */
