@@ -24,10 +24,13 @@ h1 h3 p{
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
 }
-.main{
+#hello{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     min-height: 100vh;
 }
@@ -36,32 +39,29 @@ h1 h3 p{
     flex-direction: column;
     max-width: 50rem;
     position: relative;
-    left: 100px;
 }
 #greeting h1{
+    display: block;
     width: fit-content;
     color: white;
     position: relative;
-    left: 60px;
-    /* top: 200px; */
     font-size: 2.7rem;
     text-shadow: red -2px 0;
     text-shadow: green 2px 0;
 }
 #greeting h3{
     width: fit-content;
-    display: inline;
+    display: block;
     color: white;
     position: relative;
-    left: 60px;
     margin-top: 20px;
     margin-bottom: 10px;
-    /* top: 210px; */
     font-size: 1.5rem;
     text-shadow: red -2px 0;
     text-shadow: green 2px 0;
 }
 .cme a{
+    display: block;
     font-size: 1.4rem;
     background-color: crimson;
     color: #ffffff;
@@ -70,8 +70,7 @@ h1 h3 p{
     font-weight: bold;
     text-align: center;
     position: relative;
-    right: 90px;
-    top: 140px;
+    right: 50px;
 }
 .cme a:hover{
     background-color: white;
