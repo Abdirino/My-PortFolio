@@ -9,110 +9,42 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
-html{
-    font-size: 70%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-    overflow-x: hidden;
-}
-section{
-    padding: 2rem 9%;
-}
-.btn{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: 5rem;
-    background: rgb(19, 104, 108);
-    padding: .9rem 3.5rem;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-.btn:hover{
-    color: brown;
-}
-
 h1 h3 p{
     text-shadow: red -2px 0;
     text-shadow: green 2px 0;
 }
 /* nav sec */
-header{
-    position: fixed;
-    top: 0; right: 0; left: 0;
-    background: rgba(41, 41, 41, 0);
-    padding: 2rem 6%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-header .logo{
-    font-size: 3rem;
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: red -2px 0;
-    text-shadow: green 2px 0;
-    position: relative;
-    right: 90px;
-}
-header .logo span{
-    color: crimson;
-}
-.navbar{
-    margin-right: 120px;
-}
-header .navbar a{
-    font-size: 1.5rem;
-    padding:  0 1rem;
-    color: whitesmoke;
-}
-header .icon a{
-    font-size: 2.5rem;
-    color: whitesmoke;
-    margin-left: 1.5rem;
-}
-header .icon a:hover{
-    color: var(--aqua);
-}
-header #toggler{
-    display: none;
-}
-header .bx-menu{
-    font-size: 3rem;
-    color: whitesmoke;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    cursor: pointer;
-    border: 3px solid rgba(0, 0, 0, 0.303);
-    display: none;
-}
+
 /* close nav sec */
 /* hello sec */
 
 #hello{
-    background-image: url(images/Hello\ .jpg);
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
 }
 .main{
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 #greeting{
     display: flex;
     flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+    left: 100px;
 }
 #greeting h1{
     width: fit-content;
     color: white;
     position: relative;
     left: 60px;
-    top: 200px;
-    font-size: 30px;
+    /* top: 200px; */
+    font-size: 2.7rem;
     text-shadow: red -2px 0;
     text-shadow: green 2px 0;
 }
@@ -122,22 +54,28 @@ header .bx-menu{
     color: white;
     position: relative;
     left: 60px;
-    top: 210px;
-    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* top: 210px; */
+    font-size: 1.5rem;
+    text-shadow: red -2px 0;
+    text-shadow: green 2px 0;
 }
 .cme a{
+    font-size: 1.4rem;
     background-color: crimson;
-    color: white;
+    color: #ffffff;
     padding: 10px 15px;
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
     position: relative;
-    left: 60px;
-    top: 240px;
+    right: 90px;
+    top: 140px;
 }
 .cme a:hover{
-    background-color: black;
+    background-color: white;
+    color: crimson;
     transition: .6s ease;
 }
 .cme a:active{
@@ -146,117 +84,11 @@ header .bx-menu{
 
 /* close hello sec */
 /* about sec */
-.main2{
-    width: 100%;
-    min-height: 80vh;
-}
-#about{
-    background-color: rgb(251, 248, 248);
-}
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.info{
-    width: 600px;
-    margin-left: 60px;
-}
-.info h2{
-    font-size: 30px;
-    font-weight: bolder;
-}
-.info p{
-    font-size: 18px;
-    font-weight: bold;
-}
-.resume a{
-    background-color: crimson;
-    padding: 10px 15px;
-    color: white;
-    font-weight: bold;
-    position: relative;
-    top: 30px;
-    border-radius: 10px;
-}
-.resume a:hover{
-    background-color: black;
-    transition: .5s ease;
-}
-.image img{
-    width: 300px;
-    height: 300px;
-    margin: 15px;
-    border-radius: 50%;
-}
-.shadow{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.427) 5px 5px 5px 5px;
-}
 
 /* close about sec */
-/* skill sec */
+/* service sec */
 
-.main3{
-    width: 100%;
-    height: 70vh;
-}
-.skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.card{
-    border: 2px solid red;
-    width: 330px;
-    height: 260px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-/* close skill sec */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* close service sec */
 
 
 
@@ -278,54 +110,35 @@ header .bx-menu{
 
 /* media Queries */
 @media (max-width: 991px){
-    html{
-        font-size: 58%;
+    #greeting{
+        position: relative;
+        left: 50px;
     }
-    header{
-        padding: 1rem;
+    .cme a{
+        position: relative;
+        right: 140px;
     }
-    section{
-        padding: 2rem;
-    }
-    #hello{
-        background-position: left;
-    }
+    
 }
 @media (max-width: 768px){
-    header .bx-menu{
-        display: block;
-    }
-    header .navbar{
-        position: absolute;
-        top: 100%; left: 0; right: 0;
-        background: #eee;
-        border-top: .1rem solid rgba(0, 0, 0, 0.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    header .navbar a{
-        margin: 1,5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: 1rem solid rgba(0, 0, 0, 0.108);
-        display: block;
-        color: black;
-    }
-    #hello .content h1{
-        font-size: 2rem;
-    }
-    #hello .content span{
-        font-size: 1.5rem;
-    }
+    
 
 }
 @media (max-width: 450px){
-    html{
-        font-size: 50%;
+    #greeting{
+        position: relative;
+        left: 30px;
     }
-    header{
-        padding: 1rem;
+    .cme a{
+        position: relative;
+        right: 160px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 360px){
+    .cme a{
+        position: relative;
+        right: 160px;
+        font-size: .7rem;
     }
 }
