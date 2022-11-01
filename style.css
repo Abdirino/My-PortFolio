@@ -151,6 +151,7 @@ h1 h3 p{
     align-items: center;
 }
 .card{
+    border-radius: 5px;
     max-width: 550px;
     height: 350px;
     overflow: hidden;
