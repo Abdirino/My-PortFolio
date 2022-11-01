@@ -151,6 +151,8 @@ h1 h3 p{
     align-items: center;
 }
 .card{
+    border-image: url(images/border-image.png);
+    border-image-slice: fill;
     border-radius: 5px;
     max-width: 550px;
     height: 350px;
