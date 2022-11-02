@@ -55,7 +55,7 @@ h1 h3 p{
     color: white;
     position: relative;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 1.5rem;
     text-shadow: red -2px 0;
     text-shadow: green 2px 0;
@@ -118,6 +118,7 @@ h1 h3 p{
 }
 .skills .skill-icons .icons i{
     font-size: 40px;
+    cursor: pointer;
     padding: 20px;
     margin-right: 20px;
 }
@@ -149,19 +150,20 @@ h1 h3 p{
 .cards{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 .card{
+    /* flex: 1 1 100px; */
     border-image: url(images/border-image.png);
     border-image-slice: fill;
     border-radius: 5px;
-    max-width: 550px;
-    height: 350px;
+    max-width: 400px;
+    height: 300px;
     overflow: hidden;
     position: relative;   
-    margin: 10px;
+    margin: 30px;
 }
 .card .main-content{
     width: 100%;
