@@ -113,13 +113,16 @@ h1 h3 p{
 .skills .skill-icons{
     margin: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .skills .skill-icons .icons i{
     font-size: 40px;
     padding: 20px;
     margin-right: 20px;
+}
+.skills .skill-icons .icons i:hover{
+    transform: scale(1.5);
 }
 /* skillset about sec */
 /* project sec */
