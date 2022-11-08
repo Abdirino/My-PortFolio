@@ -94,6 +94,7 @@ h1 h3 p{
     background: black;
     color: wheat;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .skills .skill-head{
     /* width: 60%; */
@@ -108,10 +109,30 @@ h1 h3 p{
     text-align: center;
     margin: 6px 10px;
 }
-.skills .info p{
-    font-size: 20px;
-    line-height: 40px;
-    border-top: 20px;
+.skills .skill-types{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .skill-types .skill-sets{
+    /* flex: 1 1 100px; */
+    width: 300px;
+    height: 300px;
+    /* border:  2px solid crimson; */
+    border-radius: 10px;
+    margin: 20px 25px;
+}
+.skills .skill-types .skill-sets:nth-child(1){
+    background: linear-gradient(rgb(177, 63, 63), crimson);
+}
+.skills .skill-types .skill-sets:nth-child(2){
+    background: linear-gradient(rgb(104, 8, 25), rgb(250, 0, 0));
+}
+.skills .skill-types .skill-sets:nth-child(3){
+    background: linear-gradient(rgb(255, 5, 5), rgb(103, 9, 28));
+}
+.skills .skill-types .skill-sets:hover{
+    transform: scale(1.1);
+    box-shadow:-30px brown;
 }
 .skills .skill-icons{
     margin: 2rem;
