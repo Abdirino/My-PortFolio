@@ -2,7 +2,6 @@
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
     text-decoration: none;
     list-style: none;
     font-family: 'Roboto', sans-serif;
@@ -23,13 +22,22 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff;
+input{
+    display: none;
 }
-.logo span{
-    color: #306ee8;
+label{
+    position: absolute;
+    top: 20px; right: 10px;
+    cursor: pointer;
+    display: none;
+}
+label span{
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin: 5px 0;
+    transition: .3s;
 }
 .burger{
     display: none;
@@ -53,6 +61,14 @@ header{
  .navbar ul li a:active{
     color: #ffffff;
     background: #0b1224;
+ }
+ input{
+    display: none;
+ }
+ label span{
+    width: 10px; height: 3px;
+    margin: 6px 0;
+    background: #ffffff;
  }
  @media only screen and(max-width: 1320px){
     header{
