@@ -1,13 +1,13 @@
-const ham = document.querySelector(".burger"); 
-const Menu = document.querySelector(".nav-menu"); 
+const burger = document.querySelector(".burger"); 
+const navMenu = document.querySelector(".nav-menu"); 
 
-ham.addEventListener("click", () => {
-    ham.classList.toggle("active");
-    Menu.classList.toggle("active");
+burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 })
 
 document.querySelectorAll(".nav-link");
 addEventListener("click", () => {
-    ham.classList.remove("active");
-    Menu.classList.remove("active");
+    burger.classList.remove("active");
+    navMenu.classList.remove("active");
 })

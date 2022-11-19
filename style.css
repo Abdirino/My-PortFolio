@@ -8,6 +8,9 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
+html{
+    scroll-behavior: smooth;
+}
 h1 h3 p{
     text-shadow: red -2px 0;
     text-shadow: green 2px 0;
@@ -23,7 +26,7 @@ header{
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    min-height: 70px;
+    min-height: 60px;
     padding: 15px 25px;
 }
 .nav-menu{
@@ -51,10 +54,10 @@ header{
     color: #ffffff;
 }
 .nav-link:hover{
-    background-color: rgb(14, 84, 84);
+    background-color: rgb(30, 172, 172);
     border-radius: 15px;
 }
-.burger{
+/* .burger{
     display: none;
     cursor: pointer;
 }
@@ -66,29 +69,32 @@ header{
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     background-color: #ffffff;
+} */
+.checkbtn{
+    color: aqua;
+    font-size: 40px;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
 @media (max-width:900px){
-    .nav-menu{
-        gap: 25px;
+    .checkbtn{
+        display: block;
+        margin: 10px 0;
+    }
+    #check:checked ~ .nav-menu{
+        left: 0;
     }
     .nav-branding{
         font-size: 2rem;
         margin: 10px;
     }
-    .burger{
-        display: block;
-        margin: 13px 5px;
-    }
-    /* .burger:active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .burger:active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .burger:active .bar:nth-child(1){
-        transform: translateY(-8px) rotate(-45deg);
-    } */
     .navbar{
         display: flex;
         flex-direction: row;
@@ -107,8 +113,8 @@ header{
     }.nav-item{
         margin: 16px 0;
     }
-    .nav-menu:active{
-        left: 0;
+    .nav-menu:checked .nav-link:active{
+        left: -100%;
     }
 }
 /* close nav sec */
