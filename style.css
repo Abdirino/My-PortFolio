@@ -13,7 +13,27 @@ h1 h3 p{
     text-shadow: green 2px 0;
 }
 /* nav sec */
-
+header{
+    background-color: #181524;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 25px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+.nav-branding{
+    font-size: 2rem;
+}
 /* close nav sec */
 /* hello sec */
 
