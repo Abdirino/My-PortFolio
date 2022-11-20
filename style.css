@@ -7,6 +7,19 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
+body{
+    height: 500vh;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background: #1b1729;
+}
+::-webkit-scrollbar-thumb{
+    background: #3ca8e7;
+    border-radius: 100vw;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -26,7 +39,7 @@ header{
     justify-content: space-between;
     align-items: center; */
     min-height: 60px;
-    /* padding: 15px 25px; */
+    padding: 5px 10px;
 }
 .nav-menu{
     float: right;
@@ -105,197 +118,9 @@ header{
         left: -100%;
     }
 }
-/* close nav sec */
-/* hello sec */
+/* close nav sec */  
 
-#hello{
-    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-    display: flex;
-    flex-direction: column;
-}
-#hello{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-}
-#greeting{
-    display: flex;
-    flex-direction: column;
-    max-width: 50rem;
-    position: relative;
-}
-#greeting h1{
-    display: block;
-    width: fit-content;
-    color: white;
-    position: relative;
-    font-size: 2.7rem;
-    text-shadow: red -2px 0;
-    text-shadow: green 2px 0;
-}
-#greeting h3{
-    width: fit-content;
-    display: block;
-    color: white;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    text-shadow: red -2px 0;
-    text-shadow: green 2px 0;
-}
-.cme a{
-    display: block;
-    font-size: 1.4rem;
-    background-color: crimson;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    right: 50px;
-}
-.cme a:hover{
-    background-color: white;
-    color: crimson;
-    transition: .6s ease;
-}
-.cme a:active{
-    background-color: rgb(246, 19, 19);
-}
 
-@media (max-width: 990px){
-
-}
-
-/* close hello sec */
-/* services sec */
-.container{
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.card{
-    position: relative;
-    cursor: pointer;
-}
-.card .face{
-    width: 300px;
-    height: 200px;
-    transition: .5s;
-}
-.card .face .face1{
-    position: relative;
-    background: #333;
-}
-/* services about sec */
-/* project sec */
-#project{
-    width: 100%;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-color: crimson;
-    color: black;
-}
-#project h1{
-    padding: 15px 20px;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid black;
-}
-.cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    /* flex: 1 1 100px; */
-    border-image: url(images/border-image.png);
-    border-image-slice: fill;
-    border-radius: 5px;
-    max-width: 400px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;   
-    margin: 30px;
-}
-.card .main-content{
-    width: 100%;
-    height: 100%;
-}
-.card .main-content img{
-    width: 100%;
-    height: 100%;
-}
-.card .overlay-content{
-    width: 100%;
-    height: 100%;
-    padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.564);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
-    transition: 0.6s;
-    top: 0%;
-    left: 100%;
-    opacity: 0.8s;
-}
-.card .overlay-content h3{
-    font-size: 30px;
-    color: crimson;
-    font-weight: bolder;
-    margin-bottom: 20px;
-}
-.card:hover .overlay-content{
-    transform: translateX(-100%);
-}
-.card .overlay-content button{
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: crimson;
-    border-radius: 10px;
-}
-.card .overlay-content button a{
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-.card .overlay-content button:hover{
-    background-color: white;
-}
-.card .overlay-content button a:hover{
-    color: crimson;
-}
-@media (max-width: 900px){
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-/* close project sec */
 
 
 
