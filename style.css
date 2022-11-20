@@ -53,22 +53,10 @@ header{
     color: #ffffff;
 }
 .nav-link:hover{
-    background-color: rgb(30, 172, 172);
-    border-radius: 15px;
+    border-bottom:4px solid  rgb(30, 172, 172);
+    width: 100%;
+    /* border-radius: 15px; */
 }
-/* .burger{
-    display: none;
-    cursor: pointer;
-}
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    background-color: #ffffff;
-} */
 .checkbtn{
     color: aqua;
     font-size: 40px;
@@ -92,7 +80,6 @@ header{
     }
     .nav-branding{
         font-size: 2rem;
-        margin: 10px;
     }
     .navbar{
         min-height: 40px;
