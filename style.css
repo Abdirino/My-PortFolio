@@ -26,7 +26,7 @@ header{
     justify-content: space-between;
     align-items: center; */
     min-height: 60px;
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
 }
 .nav-menu{
     float: right;
@@ -53,9 +53,9 @@ header{
     color: #ffffff;
 }
 .nav-link:hover{
-    border-bottom:4px solid  rgb(30, 172, 172);
+    background: rgb(30, 110, 110);
     width: 100%;
-    /* border-radius: 15px; */
+    border-radius: 15px;
 }
 .checkbtn{
     color: aqua;
@@ -80,6 +80,7 @@ header{
     }
     .nav-branding{
         font-size: 2rem;
+        margin: 12px;
     }
     .navbar{
         min-height: 40px;
@@ -175,85 +176,28 @@ header{
 }
 
 /* close hello sec */
-/* skillset sec */
-.skills{
-    width: 100%;
+/* services sec */
+.container{
+    width: 1000px;
+    position: relative;
     display: flex;
-    min-height: 100vh;
-    background: black;
-    color: wheat;
-    flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: column;
 }
-.skills .skill-head{
-    /* width: 60%; */
-    /* padding: 2rem; */
-    text-align: center;
-}
-.skills .skill-head h2{
-    color: crimson;
-    font-size: 35px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid crimson;
-    text-align: center;
-    margin: 6px 10px;
-}
-.skills .skill-types{
-    display: flex;
-    flex-wrap: wrap;
-}
-.skills .skill-types .skill-sets{
-    /* flex: 1 1 100px; */
-    width: 300px;
-    height: 300px;
-    /* border:  2px solid crimson; */
-    border-radius: 10px;
-    margin: 20px 25px;
-}
-.skills .skill-types .skill-sets:nth-child(1){
-    background: linear-gradient(rgb(250, 24, 24), rgb(75, 9, 22));
-}
-.skills .skill-types .skill-sets:nth-child(2){
-    background: linear-gradient(rgb(104, 8, 25), rgb(250, 0, 0));
-}
-.skills .skill-types .skill-sets:nth-child(3){
-    background: linear-gradient(rgb(255, 5, 5), rgb(103, 9, 28));
-}
-.skills .skill-types .skill-sets:hover{
-    transform: scale(1.1);
-}
-.skills .skill-types .skill-sets h3{
-    font-size: 20px;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-    text-align: center;
-    margin: 10px 10px;
-    text-shadow: red -2px 0;
-    text-shadow: rgb(0, 0, 0) 2px 0;
-}
-.skills .skill-types .skill-sets p{
-    font-size: 16px;
-    text-align: center;
-    margin: 10px 10px;
-    text-shadow: red -2px 0;
-    text-shadow: rgb(0, 2, 0) 2px 0;
-}
-.skills .skill-icons{
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.skills .skill-icons .icons i{
-    font-size: 40px;
+.card{
+    position: relative;
     cursor: pointer;
-    padding: 20px;
-    margin-right: 20px;
 }
-.skills .skill-icons .icons i:hover{
-    transform: scale(1.5);
+.card .face{
+    width: 300px;
+    height: 200px;
+    transition: .5s;
 }
-/* skillset about sec */
+.card .face .face1{
+    position: relative;
+    background: #333;
+}
+/* services about sec */
 /* project sec */
 #project{
     width: 100%;
