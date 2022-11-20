@@ -63,9 +63,10 @@ header{
     color: #ffffff;
 }
 .nav-link:hover{
-    background: rgb(30, 110, 110);
+    background: rgb(56, 244, 244);
     width: 100%;
     border-radius: 15px;
+    color: black;
 }
 .checkbtn{
     color: aqua;
