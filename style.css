@@ -26,7 +26,7 @@ h1 h3 p{
 }
 /* nav sec */
 header{
-    background-color: #181524;
+    background-color: #18152481;
     position: fixed;
     top: 0; right: 0; left: 0;
     z-index: 1000;
@@ -116,7 +116,64 @@ header{
         left: -100%;
     }
 }
-/* close nav sec */  
+/* close nav sec */
+  /* home sec */
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: color-change-3x 4s linear infinite alternate both;
+	animation: color-change-3x 4s linear infinite alternate both;
+}
+.home .greet{
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(16, 16, 64), rgb(3, 48, 52));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home .greet h3{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.home .greet h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+ @-webkit-keyframes color-change-3x {
+    0% {
+      background: #10585e;
+    }
+    50% {
+      background: #642cff;
+    }
+    100% {
+      background: #22ccea;
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: #1a575c;
+    }
+    50% {
+      background: #682cff;
+    }
+    100% {
+      background: #22d6ea;
+    }
+  }
+  
+  /* end home sec */
+
+  /* About sec */
+  .about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* End About sec */
 
 
 
