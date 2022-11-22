@@ -196,6 +196,14 @@ header{
       background: #22d6ea;
     }
   }
+  @media(max-width:900px){
+    .home .greet h3{
+        font-size: 18px;
+    }
+    .home .greet h1{
+        font-size: 45px;
+    }
+  }
   
   /* end home sec */
 
@@ -252,15 +260,9 @@ header{
 
   /* service sec */
   .service{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background: #0d373b;
-  }
-  .contents{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
   }
   .service h1{
     font-family: aquire;
@@ -272,10 +274,17 @@ header{
     -webkit-text-fill-color: transparent;
     padding: 10px;
   }
+  .contents{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-direction: row;
+  }
   .service .content{
-    /* width: 200px; */
-    height: 350px;
-    margin: 40px;
+    width: 400px;
+     /* height: 350px; */
+    flex-wrap: wrap;
+    /* margin: 50px; */
     padding: 30px 50px;
     background: #181524;
     border-radius: 8px;
@@ -307,14 +316,14 @@ header{
   }
   .service .content .down-lay p{
     padding: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 18px;
     color: rgb(44, 154, 117);
   }
 
 
   @media (max-width:900px){
-    .content{
+    .contents{
         display: flex;
         flex-wrap: wrap;
     }
