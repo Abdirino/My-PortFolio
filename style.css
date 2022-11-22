@@ -235,6 +235,8 @@ header{
     -webkit-text-fill-color: transparent;
   }
   .about .about-me p{
+    font-family: aquire;
+    text-transform: none;
     gap: 20px;
     font-size: 22px;
     margin: 10px 20px;
@@ -292,7 +294,7 @@ header{
     height: 360px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
@@ -309,7 +311,7 @@ header{
   }
   .service .content .up-content h1{
     font-size: 30px;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 10px;
     font-family: aquire;
     border-bottom: 3px solid aquamarine;
@@ -318,20 +320,24 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .service .content .up-content p{
+    font-family: aquire;
+    margin-top: 25px;
+    font-size: 18px;
+    gap: 20px;
+    color: #3cd3e7;
+  }
   .service .content .up-content .icon{
     width: 40px;
     height: 40px;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .service .content .up-content .icon img{
     width: 100%;
     height: 100%;
-  }
-  .service .content .down-lay p{
-    padding: 5px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: rgb(44, 154, 117);
   }
   /* end service sec */
 
