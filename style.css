@@ -59,6 +59,7 @@ header{
     font-weight: bold;
     background: linear-gradient(to right, rgb(78, 78, 244), rgb(72, 231, 245));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .nav-link{
@@ -73,6 +74,9 @@ header{
 .nav-link:hover{
     color: black;
     border-radius: 5px;
+}
+.nav-link:active{
+    background-color: #1a575c;
 }
 .nav-link::before{
     content: "";
@@ -155,18 +159,19 @@ header{
     font-weight: bold;
     background: linear-gradient(to right, rgb(16, 16, 64), rgb(3, 48, 52));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .home .greet h3{
     font-family: aquire;
     padding: 4px 18px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: lighter;
 }
 .home .greet h1{
     font-family: aquire;
     padding: 4px 18px;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: bold;
 }
  @-webkit-keyframes color-change-3x {
@@ -218,6 +223,7 @@ header{
     margin: 30px auto;
     background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .about .about-me p{
@@ -243,6 +249,77 @@ header{
     }
 }  
   /* End About sec */
+
+  /* service sec */
+  .service{
+    height: 100vh;
+    width: 100%;
+    background: #0d373b;
+  }
+  .contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .service h1{
+    font-family: aquire;
+    font-size: 40px;
+    border-bottom: 3px solid aquamarine;
+    background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+  }
+  .service .content{
+    /* width: 200px; */
+    height: 350px;
+    margin: 40px;
+    padding: 30px 50px;
+    background: #181524;
+    border-radius: 8px;
+    box-shadow: 2px 4px 12px rgb(5, 146, 156);
+  }
+  .service .content:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 8px 32px rgb(8, 223, 238);
+  }
+  .service .content .up-content h1{
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: aquire;
+    border-bottom: 3px solid aquamarine;
+    background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .service .content .up-content .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+  .service .content .up-content .icon img{
+    width: 100%;
+    height: 100%;
+  }
+  .service .content .down-lay p{
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgb(44, 154, 117);
+  }
+
+
+  @media (max-width:900px){
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  /* end service sec */
 
 
 
