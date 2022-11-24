@@ -269,20 +269,6 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .about .about-me h2 span .typed-text{
-    font-weight: normal;
-    color: aquamarine;
-  }
-  .about .about-me h2 span .cursor{
-    display: inline-block;
-    background-color: #ccc;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-  }
-  .about .about-me h2 span .cursor.typing{
-    animation: none;
-  }
   .about .img{
     flex: 1 1 300px;
   }
