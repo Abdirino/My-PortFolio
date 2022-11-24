@@ -2,6 +2,7 @@
     font-family: aquire;
     src: url(aquire-font/Aquire-BW0ox.otf);
 }
+/* on-scoll animation */
 .hidden{
   opacity: 0;
   filter: blur(3px);
@@ -13,6 +14,7 @@
   filter: blur(0);
   transform: translateX(0);
 }
+/* on-scroll animation */
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -184,6 +186,10 @@ header{
     font-size: 60px;
     font-weight: bold;
 }
+.home .greet h1:nth-child(1){
+  font-size: 22px;
+}
+
  @-webkit-keyframes color-change-3x {
     0% {
       background: #10585e;
@@ -314,6 +320,12 @@ header{
     z-index: 1;
     background: #181524;
     box-shadow: 2px 4px 12px rgb(5, 146, 156);
+  }
+  .service .content:nth-child(2){
+    transition-delay: 200ms;
+  }
+  .service .content:nth-child(3){
+    transition-delay: 400ms;
   }
   .service .content:hover{
     transform: scale(1.1);
