@@ -1,13 +1,13 @@
-// const burger = document.querySelector(".burger"); 
-// const navMenu = document.querySelector(".nav-menu"); 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }else{
+            entry.target.classList.remove('show')
+        }
+    })
+})
 
-// burger.addEventListener("click", () => {
-//     burger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// })
-
-// document.querySelectorAll(".nav-link");
-// addEventListener("click", () => {
-//     burger.classList.remove("active");
-//     navMenu.classList.remove("active");
-// })
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el))
