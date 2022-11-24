@@ -2,7 +2,7 @@
     font-family: aquire;
     src: url(aquire-font/Aquire-BW0ox.otf);
 }
-/* on-scoll animation */
+/* on-scroll animation */
 .hidden{
   opacity: 0;
   filter: blur(3px);
@@ -257,6 +257,31 @@ header{
     font-size: 22px;
     margin: 10px 20px;
     color: rgb(48, 153, 153);
+  }
+  .about .about-me h2{
+    width: fit-content;
+    font-family: aquire;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px 10px;
+    background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about .about-me h2 span .typed-text{
+    font-weight: normal;
+    color: aquamarine;
+  }
+  .about .about-me h2 span .cursor{
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .about .about-me h2 span .cursor.typing{
+    animation: none;
   }
   .about .img{
     flex: 1 1 300px;

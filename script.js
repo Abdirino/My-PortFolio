@@ -13,3 +13,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el))
 // end on-scroll animation
+
+// auto-complete text
+
+// end auto-complete text
