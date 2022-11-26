@@ -375,6 +375,63 @@ header{
   /* end service sec */
 
   /* project sec */
+  /* .project{
+    background: rgb(1, 47, 66);
+  } */
+  .project .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project .head h1{
+    font-size: 30px;
+    margin: 10px;
+    padding: 6px;
+    width: fit-content;
+    font-family: aquire;
+    border-bottom: 3px solid aquamarine;
+    background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .project .head a{
+    padding: 10px 20px;
+    margin: 10px;
+    background: linear-gradient(to right, rgb(57, 57, 218), rgb(21, 74, 78));
+    font-family: aquire;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aqua;
+  }
+  .project .head a:hover{
+    color: black;
+    background: aquamarine;
+  }
+  .projects{
+    padding: 40px 30px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 300px;
+  }
+  .proj{
+    /* width: 400px; */
+    border: 2px solid aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .proj .image{
+    height: 50%;
+    width: 100%;
+  }
+  .proj .image img{
+    height: 100%;
+    width: 100%;
+  }
   /* end project sec */
 
   /* contact sec */
