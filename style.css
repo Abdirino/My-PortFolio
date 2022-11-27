@@ -466,8 +466,13 @@ header{
   /* end project sec */
 
   /* contact sec */
-
-  
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
   /* end contact sec */
 
 
