@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you!</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background: #222;
+        }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup{
+    border: 2px solid #555;
+    width: 400px;
+    background: #222;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #222;
+    z-index: 2000;
+  }
+  .popup .bxs-checkbox-checked{
+    color: white;
+    font-size: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.612);
+    border-radius: 6px;
+  }
+  .popup h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family: aquire;
+  }
+  .popup p{
+    color: white;
+    font-size: 17px;
+    padding: 10px 0 0 0;
+  }
+  .popup button{
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 0;
+    color: white;
+    border: 0;
+    outline: none;
+    background-color: green;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.615);
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="popup">
+            <i class='bx bxs-checkbox-checked' style='color:#2af904'  ></i>
+            <h2>Thank You</h2>
+            <p>Your message have been successfully sent</p>
+            <button type="button"><a href="index.html">OK</a></button>
+        </div>
+    </div>
+</body>
+</html>

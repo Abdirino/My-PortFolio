@@ -516,6 +516,11 @@ header{
     color: white;
     cursor: pointer;
   }
+  form button a{
+    font-family: aquire;
+    font-size: 18px;
+    color: white;
+  }
   form button:hover{
     color: black;
     background: rgb(121, 121, 121);
