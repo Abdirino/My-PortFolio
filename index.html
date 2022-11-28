@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Pr-4H4xBr6MljTcGR");
+   })();
+</script>
 </head>
 <!-- oncontextmenu="return false" -->
 <body> 
@@ -124,7 +132,7 @@
         </div>
         <div class="content hidden">
             <div class="img">
-                <img src="images/Background.jpeg" alt="">
+                <img src="images/contact sec.jpg" alt="">
             </div>
             <div class="detail">
                 <h2>Project Name</h2>
@@ -139,17 +147,7 @@
 
     <!-- contact sec -->
     <div class="contact" id="contact">
-        <div class="head">
-            <h1>Contact Me</h1>
-        </div>
-        <form class="hidden" action="" method="post">
-            <input class="field" type="text" placeholder="First Name" required><br>
-            <input class="field" type="text" placeholder="Last Name" required><br>
-            <input class="field" type="email" placeholder="E-Mail" required><br>
-            <input class="field" type="password" placeholder="Password" required><br>
-            <textarea class="field" cols="30" rows="10" required placeholder="Type your message here..."></textarea><br>
-            <button type="submit"><a href="pop.html" target="_self">Send</a></button>
-        </form>
+        
     </div>
     <!-- end contact sec -->
 
