@@ -372,6 +372,14 @@ header{
     width: 100%;
     height: 100%;
   }
+  .p-lang i{
+    font-size: 45px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .p-lang i:hover{
+    transform: scale(1.2);
+  }
   /* end service sec */
 
   /* project sec */
@@ -553,6 +561,12 @@ header{
   }
   form button:hover{
     background: rgb(253, 255, 254);
+  }
+  #msg{
+    color: aqua;
+    margin-top: -40px;
+    padding: 0 15px;
+    font-size: 20px;
   }
   /* end contact sec */
 

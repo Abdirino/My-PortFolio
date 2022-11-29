@@ -119,6 +119,18 @@
                     </p>
                 </div>
             </div>
+
+            <div class="p-lang">
+                <i class='bx bxl-html5' style='color:#fa590f'  ></i>
+                <i class='bx bxl-css3' style='color:#0f88fa'  ></i>
+                <i class='bx bxl-bootstrap' style='color:#8d02f9'  ></i>
+                <i class='bx bxl-javascript' style='color:#fadc0f'  ></i>
+                <i class='bx bxl-react' style='color:#00ecff'  ></i>
+                <i class='bx bxl-php' style='color:#02a7f9'  ></i>
+                <i class='bx bxl-nodejs' style='color:#29a41a'  ></i>
+                <i class='bx bxl-mongodb' style='color:#29a41a' ></i>
+                <i class='bx bxs-data' style='color:#3d25f0'  ></i>
+            </div>
         </div>
             
     </div>
@@ -162,12 +174,13 @@
             </div>
 
             <div class="contact-right hidden">
-                <form>
+                <form name="submit-to-google-sheet" autocomplete="off">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="email" name="Email" placeholder="Your Email">
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
                     <button type="submit">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -189,6 +202,25 @@
         AOS.init();
     </script>
     <!-- end scroll animation -->
+    <!-- email receive -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxcDxnOXn2Xmgx7C24EnOB-OOu6Iq3gRdzH5WWNUUXos-34NXoi3sCOsx4PtLa-mhpR/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <!-- end email receive -->
 </body>
 
 </html>
