@@ -24,6 +24,9 @@ function closePopup () {
 }
 // end popup menu
 
+const toTop = () => {
+    window.scrollTo({top: 0, behavior: "smooth"})
+}
     
 
 

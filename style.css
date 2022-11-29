@@ -466,7 +466,24 @@ header{
   /* end project sec */
 
   /* contact sec */
-  
+  .contact{
+    background: #222;
+    padding: 60px 0;
+  }
+  .contact .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact-left{
+    flex: 1 1 300px;
+  }
+  .contact-right{
+    flex: 1 1 500px;
+  }
+  .contact-left p{
+    margin-top: 30px;
+  }
   /* end contact sec */
 
 
