@@ -269,6 +269,19 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .about-me a{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: aquire;
+    font-size: 20px;
+    background: aqua;
+    margin: 10px auto;
+    color: black;
+    font-weight: bold;
+  }
+  .about-me a:hover{
+    background: aquamarine;
+  }
   .about .img{
     flex: 1 1 300px;
   }
