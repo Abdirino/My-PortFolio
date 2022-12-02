@@ -24,10 +24,18 @@ function closePopup () {
 }
 // end popup menu
 
+// scroll to top button
 const toTop = () => {
     window.scrollTo({top: 0, behavior: "smooth"})
 }
-    
+// end scroll to top button
+
+// loader
+var load = document.querySelector(".loader");
+function loadFun(){
+    load.style.display = "none";
+}
+// end loader
 
 
 

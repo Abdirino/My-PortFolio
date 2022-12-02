@@ -21,7 +21,7 @@
 </script>
 </head>
 <!-- oncontextmenu="return false" -->
-<body> 
+<body onload="loadFun()"> 
     <!-- nav sec -->
     <header>
         <nav class="navbar">
@@ -51,6 +51,11 @@
         </nav>
     </header>
     <!-- end nav sec -->
+
+    <div class="loader">
+        <hr/><hr/><hr/><hr/>
+    </div>
+
     <!-- home sec  -->
     <div id="particles-js" style="position: absolute; width: 100%; height: 100%;"></div>
     <div class="home" id="home">
