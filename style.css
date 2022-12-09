@@ -2,45 +2,6 @@
     font-family: aquire;
     src: url(aquire-font/Aquire-BW0ox.otf);
 }
-/* loader */
-.loader{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  z-index: 9999;
-}
-.loader hr{
-  border: 0; margin: 10px;
-  width: 7%; height: 40%;
-  position: absolute;
-  /* border-radius: 20%; */
-  animation: spin 2s ease infinite;
-}
-.loader :first-child{
-  background: rgb(234, 255, 0);
-  animation-delay: -1.5s;
-}
-.loader :nth-child(2){
-  background: green;
-  animation-delay: -1s;
-}
-.loader :nth-child(3){
-  background-color: purple;
-  animation-delay: -0.5s;
-}
-.loader :last-child{
-  background: rgb(0, 26, 255);
-}
-@keyframes spin{
-  0%, 100%{transform: translate(0)}
-  25%{transform: translate(260%)}
-  50%{transform: translate(260%, 260%)}
-  75%{transform: translate(0, 260%)}
-}
-/* end loader */
 /* on-scroll animation */
 .hidden{
   opacity: 0;
