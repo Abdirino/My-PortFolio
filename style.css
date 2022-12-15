@@ -131,8 +131,8 @@ header{
         left: 0;
     }
     .nav-branding{
-        font-size: 2rem;
-        margin: 12px;
+        font-size: 2.1rem;
+        margin: 15px;
     }
     .navbar{
         min-height: 40px;
@@ -252,7 +252,7 @@ header{
     -webkit-text-fill-color: transparent;
   }
   .about .about-me p{
-    font-family: aquire;
+    /* font-family: aquire; */
     text-transform: none;
     gap: 20px;
     font-size: 22px;
@@ -316,7 +316,8 @@ header{
   .service h1{
     width: fit-content;
     font-family: aquire;
-    font-size: 40px;
+    font-size: 30px;
+    margin-top: 20px;
     border-bottom: 3px solid aquamarine;
     background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
     -webkit-background-clip: text;
@@ -368,9 +369,10 @@ header{
     -webkit-text-fill-color: transparent;
   }
   .service .content .up-content p{
-    font-family: aquire;
+    /* font-family: aquire; */
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 19px;
+    /* font-weight: bold; */
     gap: 20px;
     color: #3cd3e7;
   }
@@ -406,9 +408,9 @@ header{
     align-items: center;
   }
   .project .head h1{
-    font-size: 30px;
-    margin: 10px;
-    padding: 6px;
+    font-size: 40px;
+    margin: 6px;
+    padding: 4px;
     width: fit-content;
     font-family: aquire;
     border-bottom: 3px solid aquamarine;
@@ -435,6 +437,9 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 40px 50px;
+  }
+  .project .content:nth-child(even){
+    flex-direction: row-reverse;
   }
   .project .content .img{
     flex: 1 1 400px;
@@ -506,6 +511,17 @@ header{
   }
   .contact-left h1{
     font-size: 34px;
+    margin: 10px;
+    padding: 6px;
+    width: fit-content;
+    font-family: aquire;
+    background: linear-gradient(to right, rgb(57, 57, 218), rgb(24, 220, 238));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .contact-left h2{
+    font-size: 30px;
     margin: 10px;
     padding: 6px;
     width: fit-content;
