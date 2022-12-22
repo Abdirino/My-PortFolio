@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200;1,600&family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;700&family=Poppins:ital,wght@0,400;0,500;1,600&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 @font-face{
     font-family: aquire;
     src: url(aquire-font/Aquire-BW0ox.otf);
@@ -252,7 +254,7 @@ header{
     -webkit-text-fill-color: transparent;
   }
   .about .about-me p{
-    /* font-family: aquire; */
+    font-family: 'Poppins', sans-serif;
     text-transform: none;
     gap: 20px;
     font-size: 22px;
@@ -346,6 +348,7 @@ header{
     z-index: 1;
     background: #181524;
     box-shadow: 2px 4px 12px rgb(5, 146, 156);
+    cursor: pointer;
   }
   .service .content:nth-child(2){
     transition-delay: 200ms;
@@ -354,7 +357,7 @@ header{
     transition-delay: 400ms;
   }
   .service .content:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
     box-shadow: 4px 8px 32px rgb(8, 223, 238);
   }
   .service .content .up-content h1{
@@ -369,11 +372,11 @@ header{
     -webkit-text-fill-color: transparent;
   }
   .service .content .up-content p{
-    /* font-family: aquire; */
-    margin-top: 25px;
-    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
     /* font-weight: bold; */
-    gap: 20px;
+    gap: 10px;
     color: #3cd3e7;
   }
   .service .content .up-content .icon{
@@ -404,7 +407,7 @@ header{
   }
   .project .head {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   .project .head h1{
@@ -476,19 +479,21 @@ header{
   .project .content .detail p{
     font-size: 18px;
     gap: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     margin: 5px;
     padding: 5px;
     word-spacing: 3px;
   }
-  .project .content .detail a i{
+  
+  .project .content .detail .links i{
     padding: 10px;
     margin: 5px auto;
     font-size: 35px;
     color: rgb(5, 97, 97);
+    cursor: pointer;
   }
-  .project .content .detail a i:hover{
-    color: rgb(34, 178, 178);
+  .project .content .detail i:hover{
+    transform: scale(1.2);
   }
   /* end project sec */
 
